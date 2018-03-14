@@ -13,9 +13,9 @@ var review = {
 			done_better: {q: 'What could you have done better?',form: 'rb', show: -1},
 			thinking_of_yourself: {q: 'Were you thinking of yourself most of the time?',form: 'rb', show: 1},
 			thinking_of_others: {q: 'Were you thinking of what you could do for others, of what you could pack into the steam of life?',form: 'rb', show: 0},
-		}
+		},
 		
-	,
+	
 	conclusion: 'Ask for God\'s forgiveness and inquire what corrective measures should be taken.'
 };
 

@@ -2,7 +2,53 @@ import Vue from 'vue'
 import App from './App.vue'
 // var review = require('/evening_review.js');
 
+Vue.component('gratitude-list', {
+	template: 
+	`
+	<div>
+		<input v-model="gratitude_temp"> <button v-on:click="add_gratitude()">Add Gratitude</button> 
+		<ul>
+			<li v-for="grateful in gratitude">{{grateful}}</li>
+		</ul>
+	</div>
+	`,
+	data () {
+	  return {
+	    gratitude_temp:'',
+	    gratitude: [],	
+	  };
+	},
+	methods: {
+	  add_gratitude () {
+		this.gratitude.push(this.gratitude_temp);
+		this.gratitude_temp = "";
+	  }
+	}
+});
 
+Vue.component('todo-list', {
+	template: 
+	`
+	<div>
+		<input v-model="todo_temp"> <button v-on:click="add_todo()">Add To Do</button> 
+		<ul>
+			<li v-for="todo in todo_list">{{todo}}</li>
+		</ul>
+	</div>
+	`,
+	data () {
+	  return {
+	    todo_temp:'',
+	    todo_list: [],	
+	  };
+	},
+	methods: {
+	  add_todo () {
+		this.todo_list.push(this.todo_temp);
+		this.todo_temp = "";
+	  }
+	}
+});
 
 Vue.component('prayer', {
 	template: `<div class="prayer">
@@ -22,17 +68,18 @@ Vue.component('review', {
 	<h3>When we retire at night, we constructively review our day.</h3>
 	<h4>{{no_worry}}</h4>
 	<ul>
-		<li class="question" v-for="(question, index, i) in review_questions">{{i+1}}: {{question.q}} 
+		<li  v-for="(question, index, i) in review_questions">{{i + 1}}: {{question.q}} 
 
-		<form>
+		<form v-if="question.show != -1">
 			<input type="radio" value="1" v-model="checked[index]">Yes
 			<input type="radio" value="0" v-model="checked[index]">No
 		</form>
-
-		<h5>Notes / Details: </h5>
-		<textarea cols='100' rows='5' v-model="answer[index]"></textarea> </li>
+		<label class="question" v-if="checked[index] != '' && checked[index] != !question.show || question.show == -1" ><h5>Notes / Details: </h5></label>
+			<textarea v-if="checked[index] != '' && checked[index] != !question.show || question.show == -1"  cols='100' rows='5' v-model="answer[index]"></textarea> </li>
+		
 	</ul>
 	<h3>{{review_conclusion}}</h3>
+	<button>Submit</button>
 	</div>`,
 	data () {
   return {

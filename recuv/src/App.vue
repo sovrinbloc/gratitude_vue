@@ -3,6 +3,8 @@
     
     <prayer></prayer>
     <review></review>
+    <gratitude-list></gratitude-list>
+    <todo-list></todo-list>
 
     
   </div>
@@ -53,6 +55,7 @@ ul {
 
 li {
   /*display: inline-block;*/
+  padding-bottom:30px;
   margin: 0 10px;
 }
 
@@ -68,6 +71,6 @@ a {
 }
 
 .question{
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 </style>

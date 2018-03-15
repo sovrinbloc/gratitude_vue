@@ -1,36 +1,26 @@
 <template>
   <div id="app">
     
-    <prayer></prayer>
-    <review></review>
-    <gratitude-list></gratitude-list>
-    <todo-list></todo-list>
+    <Prayer />
+    <EveningReview />
+    <ToDoList />
+    <GratitudeList />
 
     
   </div>
 </template>
 
 <script>
+
+import EveningReview from './Evening-Review.vue'
+import Prayer from './Prayer.vue'
+import ToDoList from './ToDoList.vue'
+import GratitudeList from './GratitudeList.vue'
 export default {
+  components: {
+    EveningReview, Prayer, ToDoList, GratitudeList
+  },
   name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App',
-      resentful: '',
-      selfish: '',
-      dishonest: '',
-      afraid: '',
-      apology: '',
-      kept_to_ourselves: '',
-      kind_and_loving: '',
-      done_better: '',
-      thinking_of_yourself: '',
-      thinking_of_others: '',
-      answer: {
-        resentful: 'joe'
-      },
-    }
-  }
 }
 </script>
 

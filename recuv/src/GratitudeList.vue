@@ -1,9 +1,9 @@
 <template>
 	<div>
-		<input v-model="gratitude_temp"> <button v-on:click="add_gratitude()">Add Gratitude</button> 
-		<ul>
-			<li v-for="grateful in gratitude">{{grateful}}</li>
-		</ul>
+		I am grateful <input v-model="gratitude_temp"> <button v-on:click="add_gratitude()">Add Gratitude</button> 
+		<ol>
+			<li v-for="(grateful, index, i) in gratitude">{{index+1}}. {{grateful}}</li>
+		</ol>
 	</div>
 </template>
 <script>
@@ -16,7 +16,7 @@ export default {
 	},
 	methods: {
 	  add_gratitude () {
-		this.gratitude.push(this.gratitude_temp);
+		this.gratitude.push("I am grateful " + this.gratitude_temp);
 		this.gratitude_temp = "";
 	  }
 	}

@@ -1,25 +1,17 @@
 <template>
   <div id="app">
-    
-    <Prayer />
-    <EveningReview />
-    <ToDoList />
-    <GratitudeList />
 
-    
+    <router-view></router-view>
+
   </div>
 </template>
 
 <script>
 
-import EveningReview from './Evening-Review.vue'
-import Prayer from './Prayer.vue'
-import ToDoList from './ToDoList.vue'
-import GratitudeList from './GratitudeList.vue'
+
+import DateNow from './DateNow.vue'
 export default {
-  components: {
-    EveningReview, Prayer, ToDoList, GratitudeList
-  },
+
   name: 'app',
 }
 </script>
@@ -38,10 +30,11 @@ h1, h2 {
   font-weight: normal;
 }
 
-ul {
+ul, ol {
   list-style-type: none;
   padding: 0;
 }
+
 
 li {
   /*display: inline-block;*/
@@ -54,6 +47,17 @@ li {
 	margin-left: auto;
 	margin-right: auto;
 	width:800px;
+}
+
+.slick{
+  display: inline-block;
+  padding-bottom:5px;
+  margin: 2px 10px 2px 10px;
+} 
+
+.tips{
+  color: #666;
+  font-size: 12px;
 }
 
 a {

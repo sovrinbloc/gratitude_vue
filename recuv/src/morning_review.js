@@ -1,4 +1,5 @@
 var morning_review = { 
+	title: "Morning Review", 
 	content_intro: "On awakening let us think about the twenty-four hours ahead. We consider our plans for \
 	the day. Before we begin, we ask God to direct our thinking, especially asking that it be divorced \
 	from self-pity, dishonest or self-seeking motives. Under these conditions we can employ our \
@@ -34,5 +35,20 @@ var morning_review = {
 	It works - it really does. \
 	We alcoholics are undisciplined. So we let God discipline us in the simple way we have \
 	just outlined.",
+	before_todo: "We ask God to direct our thinking, especially that it be divorced from self-pity, dishonest or self-seeking motives.",
+	ask_yourself_each_todo: "Tips: Some questions to consider before adding to the to-do list.",
+	before_todo_questions: [
+		{question: 'Is this item going to help anyone besides yourself?'},
+		{question: 'Is this item going to hurt anyone?'},
+		{question: 'Have you asked God to direct your thinking?	'},
+		{question: 'Are you indecisive? If so, ask God to direct your thinking.'}, 
+		{question: 'Remember: do not struggle. The answers will come.'}, 
+	],
+	indecision: "If you are indecisive, or cannot determind which course to take, ask God for inspiration, an intuitive thought or decision.",
+	relax: "Relax, take it easy. Do not struggle.",
+	conclusion_short: "Conclude the period of meditation with a prayer that we be shown all through the day what\
+	 our next step is to be, that we be given whatever we need to take care of such problems. We ask especially for freedom from self-will,\
+	 and are careful to make no request for ourselves only. We may ask for ourselves, however, if others will be helped. \
+	 We are careful never to pray for our own selfish ends.",		
 };
 

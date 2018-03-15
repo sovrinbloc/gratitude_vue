@@ -42,6 +42,11 @@ li {
   margin: 0 10px;
 }
 
+.gratitude_box{
+  width: 300px;
+  font-size: 14px;
+}
+
 .prayer {
 	display:block;
 	margin-left: auto;

@@ -1,6 +1,7 @@
 <template>
 	<div>
-		I am grateful <input v-model="gratitude_temp"> <button v-on:click="add_gratitude()">Add Gratitude</button> 
+		I am grateful <input class="gratitude_box" v-model="gratitude_temp" > 
+		<button style="font-size: 14px;" v-on:click="add_gratitude()">Add Gratitude</button> 
 		<ol>
 			<li v-for="(grateful, index, i) in gratitude">{{index+1}}. {{grateful}}</li>
 		</ol>

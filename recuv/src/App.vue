@@ -1,6 +1,13 @@
 <template>
   <div id="app">
 
+    <router-link v-bind:to="'/'" class="router-link">Home</router-link>
+    <router-link v-bind:to="'/about'" class="router-link">About</router-link>
+    <router-link v-bind:to="'/list/todo'"class="router-link">ToDo List</router-link>
+    <router-link v-bind:to="'/list/gratitude'"class="router-link">Gratitude List</router-link>
+    <router-link v-bind:to="'/review/morning'"class="router-link">Morning Review</router-link>
+    <router-link v-bind:to="'/review/evening'"class="router-link">Evening Review</router-link>
+    <router-link v-bind:to="'/prayer/thirdstep'"class="router-link">Prayer</router-link>
     <router-view></router-view>
 
   </div>
@@ -17,6 +24,11 @@ export default {
 </script>
 
 <style lang="scss">
+
+.router-link{
+  padding-right:10px;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -38,7 +50,7 @@ ul, ol {
 
 li {
   /*display: inline-block;*/
-  padding-bottom:30px;
+  padding-bottom:4px;
   margin: 0 10px;
 }
 

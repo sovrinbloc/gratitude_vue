@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<input v-model="todo_temp" placeholder="Task">
+		<input v-model="todo_temp" placeholder="Task" style="width:300px;">
 		<input v-model="todo_time_temp" default="13:50" placeholder="7:30AM"> 
 		<button v-on:click="add_todo()">Add To Do</button> 
 		<ul>

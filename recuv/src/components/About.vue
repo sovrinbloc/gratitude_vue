@@ -1,6 +1,6 @@
 <template>
   <div id="about">
-    <h2>This Is Anonymous</h2>
+    <h2>This Is Recovery Anonymous Lite</h2>
   <p>This application was developed by Joseph A. The reason behind its development was to make simpler the vital process of doing several things that are integral to early sobriety, and to pave the solid foundation for long-term sobriety. </p>
 
   <p>There is much debate about what to do in order to remain abstainent. There are questions, arguments, truths, falacies, and everything in between. Using this application, we can decipher, once and for all, the correct measures that must be taken in order to kick the habit once and for all, and what it will take to remain clean and sober, one day at a time, for a lifetime. </p>

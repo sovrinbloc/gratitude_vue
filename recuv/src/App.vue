@@ -7,18 +7,24 @@
     <router-link v-bind:to="'/list/gratitude'"class="router-link">Gratitude List</router-link>
     <router-link v-bind:to="'/review/morning'"class="router-link">Morning Review</router-link>
     <router-link v-bind:to="'/review/evening'"class="router-link">Evening Review</router-link>
-    <router-link v-bind:to="'/prayer/thirdstep'"class="router-link">Prayer</router-link>
+    <router-link v-bind:to="'/prayers'"class="router-link">Prayers</router-link>
+    <router-link v-bind:to="'/api/gratitude'"class="router-link">Gratitude API</router-link>
+
     <router-view></router-view>
+    <Prayer />
 
   </div>
 </template>
 
 <script>
 
+import Prayer from './Prayer.vue'
 
 import DateNow from './DateNow.vue'
 export default {
-
+  components: {
+    Prayer,
+  },
   name: 'app',
 }
 </script>

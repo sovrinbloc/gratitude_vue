@@ -1,5 +1,10 @@
 <template>
 	<div>
+		<Prayer prayernum="2" />
+		
+		<Prayer prayernum="3" />
+		<Prayer prayernum="4" />
+		<Prayer prayernum="5" />
 	<h1>{{m.title}}</h1>
 	<button v-on:click="toggleReading()">View Full Page 86 Reading</button>
 	<div v-if="view_reading">
@@ -22,9 +27,11 @@
 </template>
 <script>
 import ToDoList from './ToDoList.vue'
+import Prayer from './Prayer.vue'
 export default{
 	components: {
-		ToDoList
+		ToDoList,
+		Prayer
 	},
 	data () {
 	  return {

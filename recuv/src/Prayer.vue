@@ -46,7 +46,7 @@ export default{
 
 		{
 			title: 'First Step Prayer',
-			prayer: 'Dear Lord, I admit that I am powerless over my addiction. I admit that my life is unmanageable when I try to control it. Help me this day to understand the true meaning of powerlessness. Remove from me all denial of my addiction.'
+			prayer: 'Dear Lord, I admitted that I was powerless over my addiction. I admitted that my life was unmanageable when I tried to control it. Remove from me all denial of my addiction.'
 		},
 
 		{

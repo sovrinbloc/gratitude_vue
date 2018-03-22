@@ -15,10 +15,10 @@
 		
 		<label class="question" v-if="checked[index] != '' && checked[index] != !question.show || question.show == -1" ><h5>Notes / Details: </h5></label>
 			<textarea v-if="(checked[index] != '' && checked[index] != !question.show || question.show == -1) && i != 0"  cols='100' rows='5' v-model="answer[index]"></textarea>
-			<textarea v-if="(checked[index] != '' && checked[index] != !question.show || question.show == -1) && i == 0"  cols='20' rows='5' v-model="answer[index]" placeholder="Who"></textarea> 
-			<textarea v-if="(checked[index] != '' && checked[index] != !question.show || question.show == -1) && i == 0"  cols='30' rows='5' v-model="answer[index]" placeholder="The Offense"></textarea> 
-			<textarea v-if="(checked[index] != '' && checked[index] != !question.show || question.show == -1) && i == 0"  cols='30' rows='5' v-model="answer[index]" placeholder="What did it affect?"></textarea> 
-			<textarea v-if="(checked[index] != '' && checked[index] != !question.show || question.show == -1) && i == 0"  cols='30' rows='5' v-model="answer[index]" placeholder="What was your part?"></textarea> 
+			<textarea v-if="(checked[index] != '' && checked[index] != !question.show || question.show == -1) && i == 0"  cols='20' rows='5' v-model="answer[index].who" placeholder="Who"></textarea> 
+			<textarea v-if="(checked[index] != '' && checked[index] != !question.show || question.show == -1) && i == 0"  cols='30' rows='5' v-model="answer[index].offense" placeholder="The Offense"></textarea> 
+			<textarea v-if="(checked[index] != '' && checked[index] != !question.show || question.show == -1) && i == 0"  cols='30' rows='5' v-model="answer[index].affects" placeholder="What did it affect?"></textarea> 
+			<textarea v-if="(checked[index] != '' && checked[index] != !question.show || question.show == -1) && i == 0"  cols='30' rows='5' v-model="answer[index].mypart" placeholder="What was your part?"></textarea> 
 
 		</li>
 		

@@ -21,6 +21,7 @@ const routes = [
 	{path: '/list/todo', component: ToDoList},
 	{path: '/list/gratitude', component: GratitudeList},
 	{path: '/api/gratitude', component: GratitudeAPI},
+	{path: '/quantum/movie', component: CreateNewMentalMovie},
 ]
 
 // Create the router instance and pass the `routes` option
@@ -53,6 +54,8 @@ import ToDoList from './ToDoList.vue'
 import GratitudeList from './GratitudeList.vue'
 import MorningReview from './Morning-Review.vue'
 import GratitudeAPI from './GratitudeAPI.vue'
+import CreateNewMentalMovie from './components/MentalMovieBox/CreateNewMentalMovie.vue'
+
 
 
 

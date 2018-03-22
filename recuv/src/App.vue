@@ -9,6 +9,7 @@
     <router-link v-bind:to="'/review/evening'"class="router-link">Evening Review</router-link>
     <router-link v-bind:to="'/prayers'"class="router-link">Prayers</router-link>
     <router-link v-bind:to="'/api/gratitude'"class="router-link">Gratitude API</router-link>
+    <router-link v-bind:to="'/quantum/movie'"class="router-link">Create Mental Movie Box</router-link>
 
     <router-view></router-view>
     <Prayer />
